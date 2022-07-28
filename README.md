@@ -1,17 +1,17 @@
-### @brewchain/kit.js
+### @crichain/kit.js
 -----------------------
 
 ### Install
 
 ```
-$ npm install @brewchain/kit.js
+$ npm install @crichain/kit.js
 ```
 
 ### Super simple to use
 
-Setting up the network,@brewchain/kit.js support network has testnet and prodnet
+Setting up the network,@crichain/kit.js support network has testnet and prodnet
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 var rp = require('request-promise')
 //set prodnet network
 brew.config.server_base='http://rc.domain.com/fbs';
@@ -21,7 +21,7 @@ brew.config.rpc_provider = rp;
 
 Create keystore.json、keypair
 ```java
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 const fs=require('fs');
 var kp = brew.KeyPair.genRandomKey();
 /**
@@ -37,7 +37,7 @@ console.log('keypair',kp);
 
 Get balance and nonce
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 /**
 * get balance and nonce
 * @param {*} address
@@ -57,7 +57,7 @@ brew.rpc.getBalance('8f3aa4f0f35ff81ba487f91f6b980c0ba2562245').then(function(re
 
 Get block info by hash
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 /**
 * get block info by hash
 * @param {*} blockhash
@@ -68,7 +68,7 @@ brew.rpc.getBlockByHash('03a15d84e6e29d2affab1ddc680f0aefc20586bd73ea3d81dcf6505
 ```
 Get block info by height
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 /**
 * get block info by height
 * @param {*} height
@@ -79,7 +79,7 @@ brew.rpc.getBlockByNumber('1518059').then(function(result){
 ```
 Get the current height of the BREW blockchain
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 brew.rpc.getBlockByMax().then(function(result){
     console.log(result)
 })
@@ -87,7 +87,7 @@ brew.rpc.getBlockByMax().then(function(result){
 
 Get transaction information through transaction hash
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 /**
 * get transaction information
 * @param {*} transactionhash
@@ -100,7 +100,7 @@ brew.rpc.getTransaction('f9bea09140e8e2eb2956976c3373418e2a935d821732d86bce33117
 Send transfer，support balance transfer，token transfer， crypto token transfer 。
 
 ```js
-const brew=require('@brewchain/kit.js');
+const brew=require('@crichain/kit.js');
 /**
 * get keystore by prikey
 * @param {*} prikey
