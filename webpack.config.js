@@ -53,9 +53,9 @@ module.exports = {
    		 }
   	},
   	output: {
-    	filename: 'brewchain.js',
+    	filename: 'crichain.js',
     	path: path.resolve(__dirname, 'dist'),
-    	library:'brewchain',
+    	library:'crichain',
     	libraryTarget:'commonjs2',
     	libraryExport:'default'
   	},
