@@ -1,52 +1,39 @@
 {
-  "_from": "@crichain/kit.js@^2022.1.1",
-  "_id": "@crichain/kit.js@2022.1.1",
+  "_from": "@crichain/sdk@^0.0.1",
+  "_id": "@crichain/sdk@0.0.1",
   "_inBundle": false,
   "_integrity": "sha512-Y/lE48p3SVnVIhnt3zOr4FTxyW+h1PaQONEJsoAoH9MkVHBzOI2Bq8LOEsUsbntksJGUYItBlc7IL3st596HDg==",
-  "_location": "/@crichain/kit.js",
+  "_location": "/@crichain/sdk",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "@crichain/kit.js@^2022.1.1",
-    "name": "@crichain/kit.js",
-    "escapedName": "@crichain%2fkit.js",
+    "raw": "@crichain/sdk@^0.0.1",
+    "name": "@crichain/sdk",
+    "escapedName": "@crichain%2fsdk",
     "scope": "@crichain",
-    "rawSpec": "^2022.1.1",
+    "rawSpec": "^0.0.1",
     "saveSpec": null,
-    "fetchSpec": "^2022.1.1"
+    "fetchSpec": "^0.0.1"
   },
   "_requiredBy": [
-    "/",
-    "/@crichain/hardhat-provider"
+    "/"
   ],
-  "_resolved": "https://registry.npmmirror.com/@crichain/kit.js/-/kit.js-2022.1.1.tgz",
+  "_resolved": "https://registry.npmmirror.com/@crichain/sdk/-/sdk-0.0.1.tgz",
   "_shasum": "39419ef3ed34831a955e3bc692cfc7663fc6bb87",
-  "_spec": "@crichain/kit.js@^2022.1.1",
-  "_where": "/Users/gfanx/projects/sound/sound-contract",
+  "_spec": "@crichain/sdk@^0.0.1",
+  "_where": "/Users/gfanx/projects/sound/sound-sdk-nodejs-demo",
   "author": {
-    "name": "brew"
+    "name": "Leonardo"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "aes-js": "^3.1.2",
-    "big-integer": "^1.6.48",
-    "bn.js": "^4.4.0",
-    "ethereumjs-abi": "^0.6.8",
-    "hmac-drbg": "^1.0.0",
-    "inherits": "^2.0.1",
-    "json-loader": "^0.5.7",
-    "lodash": "^4.17.15",
-    "md5": "^2.3.0",
-    "minimalistic-assert": "^1.0.0",
-    "minimalistic-crypto-utils": "^1.0.0",
-    "protobufjs": "^6.8.8",
-    "randomatic": "^3.1.1",
-    "sha2": "^1.0.2",
-    "sha3": "^2.0.0"
+    "axios": "^0.27.2",
+    "ethers": "^5.6.9",
+    "json-loader": "^0.5.7"
   },
   "deprecated": false,
-  "description": "FClink Chain JavaScript API & SDK",
+  "description": "CRI Chain JavaScript API & SDK",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
@@ -75,7 +62,7 @@
   ],
   "license": "ISC",
   "main": "dist/crichain.js",
-  "name": "@crichain/kit.js",
+  "name": "@crichain/sdk",
   "scripts": {
     "browser": "webpack --config webpack.browser.config.js",
     "build": "webpack --config webpack.config.js",
@@ -84,5 +71,5 @@
     "test": "node ./node_modules/mocha/bin/mocha",
     "trans": "node dist/test.js"
   },
-  "version": "2022.1.1"
+  "version": "0.0.1"
 }

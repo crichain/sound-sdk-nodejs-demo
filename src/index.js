@@ -1,24 +1,17 @@
 
-import Buffer from 'buffer'
-import KeyPair  from "./chain/keypair.js"
-import Protos	from "./chain/protos.js"
-import keystore	from "./chain/keystore.js"
-import config	from "./chain/config.js"
-import utils	from "./chain/utils.js"
-import rpc 	from  './chain/rpc.js'
-import TransactionInfo from './chain/transaction.js'
+const Account = require('./chain/account.js')
+const Contract = require('./chain/contract.js')
+const Transaction = require('./chain/transaction.js')
+const Utils = require('./chain/utils.js')
+const Config = require('./chain/config.js')
 
-const VERSION = "v2022.1.0";
+// const VERSION = "v0.0.1";
 
-export default {
-	version:VERSION,
-   	KeyPair:KeyPair,
-   	protos:Protos,
-   	keystore:keystore,
-   	utils:utils,
-   	config:config,
-   	Buffer:Buffer,
-	rpc:rpc,
-	TransactionInfo,
+module.exports = {
+	Account,
+	Contract,
+	Transaction,
+	Config,
+	Utils
 };
 

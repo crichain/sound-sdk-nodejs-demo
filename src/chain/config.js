@@ -1,14 +1,26 @@
-
-function config(){
-	this.rpc_provider = NaN;
+const axios = require('axios');
+// let BaseUrl = "http://localhost:3001";
+const CrichainApi = require("../api/crichain");
+let contract = {
+    path: "./"
+}
+function loadContract(path) {
+    // console.log("constract lenth", this.contracts.length);
+    // "../contracts/abi/" + name + ".json"
+    let contract = require(path)
+    if (!contract) {
+        contracts[path] = contract;
+    }
+    return contract;
 }
 
-export default {
-	config:config,	
-	keystore_path:"./keystore",
-	net_type:"testnet",
-	server_base:"http://localhost:8000/fbs",
-	store_path:"store",
-	chainId:168,
-	version:'V.2022'
+function init(data) {
+    CrichainApi.config(data.baseUrl, data.timeout);
+    this.contract = data.contract;
+}
+
+module.exports = {
+    // BaseUrl: this.BaseUrl,
+    init,
+    contract,
 }
